@@ -81,7 +81,7 @@ TenToRight.addEventListener("click", () => {
 
 forward.addEventListener("click", next)
 
-function next(){
+function next() {
     i = false
     index++
     if (index > musics.length - 1) {
@@ -119,8 +119,8 @@ audio.addEventListener("timeupdate", () => {
     }
 })
 
-function SecundosEmMinutos(secundo){
-    let minutos = Math.floor(secundo/60);
+function SecundosEmMinutos(secundo) {
+    let minutos = Math.floor(secundo / 60);
     let secundos = secundo % 60
 
     if (secundos < 10) {
@@ -130,9 +130,9 @@ function SecundosEmMinutos(secundo){
     return minutos + ":" + secundos
 }
 
-addEventListener("change", ()=>{
+addEventListener("change", () => {
     i = false
     audio.currentTime = progresso.value / progresso.max * audio.duration
     executando()
-    audio.play()    
+    audio.play()
 })
