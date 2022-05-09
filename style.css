@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Kalam;
+    src: url(assets/fontes/kalam-regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #172026;
+    --cor02: #5FCDD9;
+    --cor03: #027373;
+    --cor04: #04BFAD;
+    --cor05: #04BFAD;
+    --cor06: #04BF9D;
+    --fonte-padrao: Arial;
+}
+
+body {
+    background-image: linear-gradient(328deg, var(--cor03), var(--cor05),var(--cor06));
+    background-attachment: fixed;
+    
+}
+
+#letra {
+    background-color: rgba(255, 255, 255, 0.822);
+    font-family: Kalam;
+    color: black;
+    font-size: 20px;
+    height: 500px;
+    max-width: 900px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 15px;
+    overflow: auto;
+    margin: auto
+}
+
+#campo {
+    height: 100px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    width: 300px;
+}
+
+.timer {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botoes {
+    margin: 20px 0px 20px 0px;
+}
+
+.btn {
+    width: 50px;
+    cursor: pointer;
+}
+
+#stop {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align: center;
+    font-family: Kalam;
+}
+
+footer a {
+    color: black
+}

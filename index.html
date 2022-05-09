@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Player</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon-io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon-io/site.webmanifest">
+</head>
+
+<body>
+    <div id="letra">
+        <h2 id="titulo"></h2>
+        <p id="lyrics"></p>
+    </div>
+    <div id="campo">
+        <audio id="audio">
+            <source src="" type="audio/mpeg">
+        </audio>
+        <div>
+            <div class="timer">
+                <span id="tempo-atual">0:00</span>
+                <span id="duracao-total">0:00</span>
+            </div>
+            <input type="range" min="1" max="100" value="0" id="progresso">
+        </div>
+        <div class="botoes">
+            <img class="btn" src="assets/botoes/rewind.png" alt="">
+            <img class="btn" src="assets/botoes/ten-to-left.png" alt="">
+            <img class="btn" src="assets/botoes/play.png" alt="">
+            <img id="stop" class="btn" src="assets/botoes/stop.png" alt="">
+            <img class="btn" src="assets/botoes/ten-to-right.png" alt="">
+            <img class="btn" src="assets/botoes/forwad.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Desenvolvido por <a target="_blank" href="https://github.com/dev-rodrigo-moreno">Rodrigo Moreno</a></p>
+    </footer>
+</body>
+
+</html>
