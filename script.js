@@ -131,7 +131,8 @@ function SecundosEmMinutos(secundo){
 }
 
 addEventListener("change", ()=>{
+    i = false
     audio.currentTime = progresso.value / progresso.max * audio.duration
     executando()
-    
+    audio.play()    
 })
