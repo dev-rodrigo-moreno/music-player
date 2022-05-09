@@ -55,6 +55,10 @@ input {
     width: 300px;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
 .timer {
     width: 300px;
     margin: auto;
